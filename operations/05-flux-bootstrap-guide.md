@@ -104,6 +104,15 @@ flux bootstrap github \
   --private-key-file=~/.ssh/flux-development-key
 ```
 
+or,
+
+```bash
+flux bootstrap git \
+  --url=ssh://git@github.com/piksel-ina/piksel-gitops \
+  --branch=main \
+  --path=clusters/development
+```
+
 The `--read-write-key` flag ensures Flux has full GitOps capabilities including:
 
 - Image automation and updates
